@@ -22,9 +22,7 @@ Documentation
 # Run the NeTFactor Pipeline
 
 # Citation
-\[
-x^2=y+3
-\]
+
 sdsdsdfdfdfdfdfd
 that combines network analyses with gene expression data to identify transcription
 factors (TFs) that are expected to significantly regulate such a biomarker.
