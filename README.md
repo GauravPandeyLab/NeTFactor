@@ -4,18 +4,7 @@ likely regulating a given set of biomarkers. In the most ideal scenario, NeTFact
 gene regulatory network and applies statistical and optimization methods to this network to identify a sparse set of
 regulator TFs. For more info please see [1]
 
-Documentation
--------------
 
-* [Introduction](#NeTFactor)
-  * [Download libraries](#download-libraries)
-  * [Install miRge2.0](#download-libraries)
-  * [Troubleshooting installation](#troubleshooting-installation)
-* [How to use it](#how-to-use-it)
-  * [Annoate mode](#annotate-mode)
-  * [Predict mode](#predict-mode)
-* [Changelog](#changelog)
-* [Citation](#citation)
 
 # Reverse Engineer a Context-Specific Network
 
