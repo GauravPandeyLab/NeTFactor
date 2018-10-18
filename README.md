@@ -4,7 +4,14 @@ likely regulating a given set of biomarkers. In the most ideal scenario, NeTFact
 gene regulatory network and applies statistical and optimization methods to this network to identify a sparse set of
 regulator TFs. For more info please see [1]
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [NeTFactor](#netfactor)
+- [Reverse Engineer a Context-Specific Network](#reverse-engineer-a-context-specific-network)
+- [Run the NeTFactor Pipeline](#run-the-netfactor-pipeline)
+- [Citation](#citation)
+
+<!-- /TOC -->
 
 # Reverse Engineer a Context-Specific Network
 
