@@ -1,5 +1,5 @@
 run_netfactor <-function(path_to_expression,n_name,path_to_network,path_to_pheno,
-                         path_to_biomarker,plotx,dolasso)
+                         path_to_biomarker,plotx=TRUE,dolasso=TRUE)
 {
   # Load Required Libraries
   library(viper)
