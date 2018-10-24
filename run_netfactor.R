@@ -91,9 +91,10 @@ run_netfactor <-function(path_to_expression,n_name,path_to_network,path_to_pheno
 
   output[,4]=viper_results$FDR
   colnames(output)[4]="Viper_FDR"
-  output[,5]=10^{-fisher_enrich[as.character(viper_results$Regulon),1]}
+  output[,5]=fisher_enrich[as.character(viper_results$Regulon),1]
   colnames(output)[5]="Fisher_Regulon_FDR"
-  idx=which(output[,5]==0)
+  idx=order(output[,1],decreasing = TRUE)
+  output=output[idx,]
   return(output)
 }
 
@@ -149,7 +150,7 @@ gene_set_coverage_network_weighted <- function(gene_set,all_genes,
     tfss=colnames(adj_matrix)[d_order[1:kl]]
     neighbours=network[which(network[,1] %in% tfss  ),2]
     neighbours11=network[which(network[,1] %in% colnames(adj_matrix)[d_order[kl]] ),2]
-    percent_covered[kl]=100*(length(intersect(neighbours,genes_cluster)))/length(genes_cluster)
+    percent_covered[kl]=(length(intersect(neighbours,genes_cluster)))
     n_neighbours[kl]=length(intersect(neighbours11,genes_cluster))
     rm(tfss,neighbours,neighbours11)
   }
@@ -158,17 +159,15 @@ gene_set_coverage_network_weighted <- function(gene_set,all_genes,
 
   lasso_coverage_matrix=matrix(0,length(tfs),3)
   rownames(lasso_coverage_matrix)=colnames(adj_matrix)
-  colnames(lasso_coverage_matrix)=c("Lasso Weight","Total_Percent_Explained",
-                                    "Coverage")
+  colnames(lasso_coverage_matrix)=c("Lasso Weight",
+                                    "Genes_Regulated",
+                                    "Cumulative_Genes_Covered")
 
-  rownames(lasso_coverage_matrix)=colnames(adj_matrix)
-  colnames(lasso_coverage_matrix)=c("Lasso Weight","Total_Percent_Explained",
-                                    "Coverage")
 
 
   lasso_coverage_matrix[colnames(adj_matrix)[d_order],1]=abs(lasso_b)[d_order]
-  lasso_coverage_matrix[colnames(adj_matrix)[d_order],2]=percent_covered
-  lasso_coverage_matrix[colnames(adj_matrix)[d_order],3]=n_neighbours
+  lasso_coverage_matrix[colnames(adj_matrix)[d_order],3]=percent_covered
+  lasso_coverage_matrix[colnames(adj_matrix)[d_order],2]=n_neighbours
 
 
   return(lasso_coverage_matrix)
