@@ -100,7 +100,7 @@ The biomarker file (see ```data/input/biomarker_genes.txt``` for the one used in
 | Biomarker_gene_3 |
 </center>
 
-With all the data needed we can run the NeTFactor pipeline with the following simple command:
+With all the data needed we can run the NeTFactor pipeline with the following simple commands:
 
 ```
 source("run_netfactor.R")
