@@ -1,5 +1,5 @@
 # NeTFactor
-NeTFactor is an R code that tries to identify transcription factors (TFs) (or regulators in a generic network) that are most
+NeTFactor is an R package for identifying transcription factors (TFs) (or regulators in a generic network) that are most
 likely regulating a given set of biomarkers. In the most ideal scenario, NeTFactor uses a computationally inferred context-specific
 gene regulatory network and applies statistical and optimization methods to this network to identify a sparse set of
 regulator TFs. For more info please see [1] and cite if you use NeTFactor.
