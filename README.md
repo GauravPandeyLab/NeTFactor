@@ -15,7 +15,7 @@ regulator TFs. For more info please see [1] and cite if you use NeTFactor.
 
 <!-- /TOC -->
 
-# Reverse Engineer a Context-Specific Network (Optional)
+# Reverse Engineer a Context-Specific Network
 One of the pre-requisites to run NeTFactor is a Gene Regulatory Network (GRN). Such a GRN consists of directed edges denoting interactions between regulators (e.g. TFs) and their target(s) (e.g. gene(s) they regulate). NeTFactor utilizes the structure and constituents of such a GRN to identify the regulators, specifically TFs, that most significantly regulate the genes underlying the biomarker. For more accurate results, we suggest to reverse engineer a context-specific network if there is available contextual gene expression data. However, NeTFactor is a generic algorithm and the user can use any regulatory network available in the literature. For the companion application in [1], we used the ARACNe-AP implementation of the ARACNe algorithm (can be downloaded from https://github.com/califano-lab/ARACNe-AP) algorithm to create a context-specific GRN from a nasal RNAseq data of a case-control asthma cohort. For reproducibility we share the network created from this data (see ```data/input/aracne_network.txt```). Next, we want to give commands used to generate the network. First, to run the ARACNe algorithm one requires a gene-expression matrix as well as a set of TFs (or potential regulators) as input. The gene expression matrix is a tab-delimited file formatted such that genes are  rows and samples are columns. Moreover, the first row contains the gene names and the first column contains the sample names. Here is a simple example data:
 <center>
 
