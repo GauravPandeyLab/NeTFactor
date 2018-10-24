@@ -101,6 +101,7 @@ The biomarker file (see ```data/input/biomarker_genes.txt``` for the one used in
 </center>
 # Plots
 With all the data needed we can run the NeTFactor pipeline with the following simple command:
+
 ```
 source("run_netfactor.R")
 path_to_expression="data/input/nasal_expression.txt"
@@ -125,5 +126,6 @@ The top-7 rows for the asthma data is as follows:
 |XBP1   |  1.0004 |  11 |  52 |  0.99 |  0.0002 |
 </center>
 Above the first column has the weights coming from our lasso based convex optimization, second column has the number of biomarker genes regulated by each TF, third column has the number of genes cumulatively regulated by it and all the TFs preceding it, fourth column has the FDR associated with viper inferred activity and the fifth column has the FDR associated with the statistical significance of the overlap between the set of genes regulated by each TF in the network and the biomarker gene set.
+
 # Citation
 [1] **Network analyses identify transcription factor regulators of a novel gene expression-based asthma biomarker,** Mehmet Eren Ahsen, Alexander Grishin,Yoojin Chun, Galina Grishina, Gustavo Stolovitzky, Gaurav Pandey and Supinda Bunyanovich, *Journal of Cool Biology*, 2018 (hopefully).
