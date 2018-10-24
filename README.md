@@ -11,7 +11,6 @@ regulator TFs. For more info please see [1] and cite if you use NeTFactor.
 - [Run the NeTFactor Pipeline](#run-the-netfactor-pipeline)
 	- [Required Libraries](#required-libraries)
 	- [Running the Algorithm](#running-the-algorithm)
-- [Plots](#plots)
 - [Citation](#citation)
 
 <!-- /TOC -->
