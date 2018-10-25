@@ -2,7 +2,7 @@
 NeTFactor is an R package for identifying transcription factors (TFs) (or regulators in a generic network) that are most
 likely regulating a given set of biomarkers. In the most ideal scenario, NeTFactor uses a computationally inferred context-specific
 gene regulatory network and applies statistical and optimization methods to this network to identify a sparse set of
-regulator TFs. For more info please see [1] and cite if you use NeTFactor.
+regulator TFs. 
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
@@ -56,7 +56,7 @@ done
 ```
 java -Xmx50G -jar $ARACNE_HOME/Aracne.jar -o outputs/ --consolidate
 ```
-After these three simple codes one has the desired network in the outputs folder. For the ease of use, we share the network we used in [1] (see``` data/input/aracne_network.txt)```.
+After these three simple codes one has the desired network in the outputs folder. For the ease of use, we share the network we used in  (see``` data/input/aracne_network.txt)```.
 Note that all these steps are for running ARACNe on a unix based system and for other platforms please refer to the ARACNe-AP github [page](https://github.com/califano-lab/ARACNe-AP).
 
 # Run the NeTFactor pipeline
@@ -127,4 +127,4 @@ The top-7 rows for the asthma data is as follows:
 Above the first column has the weights coming from our lasso based convex optimization, second column has the number of biomarker genes regulated by each TF, third column has the number of genes cumulatively regulated by it and all the TFs preceding it, fourth column has the FDR associated with viper inferred activity and the fifth column has the FDR associated with the statistical significance of the overlap between the set of genes regulated by each TF in the network and the biomarker gene set.
 
 # Citation
-[1] (Forthcoming).
+Forthcoming
