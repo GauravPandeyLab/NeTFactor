@@ -127,4 +127,4 @@ The top-7 rows for the asthma data is as follows:
 Above the first column has the weights coming from our lasso based convex optimization, second column has the number of biomarker genes regulated by each TF, third column has the number of genes cumulatively regulated by it and all the TFs preceding it, fourth column has the FDR associated with viper inferred activity and the fifth column has the FDR associated with the statistical significance of the overlap between the set of genes regulated by each TF in the network and the biomarker gene set.
 
 # Citation
-Forthcoming
+Ahsen, M.E., Chun, Y., Grishin, A. et al. NeTFactor, a framework for identifying transcriptional regulators of gene expression-based biomarkers. Sci Rep 9, 12970 (2019) doi:10.1038/s41598-019-49498-y
